@@ -1,0 +1,12 @@
+C:\Users\kaidy\source\repos\test\test\obj\Debug\test.csproj.AssemblyReference.cache
+C:\Users\kaidy\source\repos\test\test\obj\Debug\View\Window.baml
+C:\Users\kaidy\source\repos\test\test\obj\Debug\View\Window.g.cs
+C:\Users\kaidy\source\repos\test\test\obj\Debug\test_MarkupCompile.cache
+C:\Users\kaidy\source\repos\test\test\obj\Debug\test.g.resources
+C:\Users\kaidy\source\repos\test\test\obj\Debug\test.Properties.Resources.resources
+C:\Users\kaidy\source\repos\test\test\obj\Debug\test.csproj.GenerateResource.cache
+C:\Users\kaidy\source\repos\test\test\obj\Debug\test.csproj.CoreCompileInputs.cache
+C:\Users\kaidy\source\repos\test\test\bin\Debug\test.exe
+C:\Users\kaidy\source\repos\test\test\bin\Debug\test.pdb
+C:\Users\kaidy\source\repos\test\test\obj\Debug\test.exe
+C:\Users\kaidy\source\repos\test\test\obj\Debug\test.pdb

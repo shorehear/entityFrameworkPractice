@@ -1,0 +1,48 @@
+﻿<Window x:Class="k11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Task manager" Height="600" Width="800">
+    
+    <StackPanel Height="190" Width="400" VerticalAlignment="Center">
+        
+        <Label Content="Логин:" Height="25" Width="200" HorizontalContentAlignment="Center"/>
+        <TextBox Height="25" Width="200" VerticalContentAlignment="Center"/>
+        
+        <Label Content="Пароль:" Height="25" Width="200" HorizontalContentAlignment="Center"/>
+        <TextBox Height="25" Width="200" VerticalContentAlignment="Center"/>
+        
+        <Button Command ="{Binding EnterButton}" Height="20" Width="50" Margin="10">Войти</Button>
+        <Button Command="{Binding CreateAccountButton}" Height="20" Width="150">Создать учетную запись</Button>
+
+
+        <TextBlock Text="{Binding MessageBlock}" HorizontalAlignment="Center"
+                   Width="200" Height="25" FontSize="11"
+                   Foreground="#FFFF0F0F"/>
+
+        <TabControl x:Name="MainTabControl" Visibility="Hidden">
+        <!-- Добавьте событие Loaded, чтобы после авторизации вкладки отображались -->
+        <TabControl.Style>
+            <Style TargetType="TabControl">
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding IsAuthenticated}" Value="True">
+                        <Setter Property="Visibility" Value="Visible"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </TabControl.Style>
+
+        <TabItem Header="Мои задачи">
+            <!-- Здесь размещаете элементы интерфейса для управления задачами -->
+        </TabItem>
+
+        <TabItem Header="Важные">
+            <!-- Здесь размещаете элементы интерфейса для управления важными задачами -->
+        </TabItem>
+        <!-- Добавьте дополнительные вкладки по необходимости -->
+    </TabControl>
+    </StackPanel>
+
+</Window>
